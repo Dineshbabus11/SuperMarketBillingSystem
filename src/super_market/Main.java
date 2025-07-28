@@ -164,7 +164,12 @@ public class Main {
 	}
 
 	public static void report() {
-	
+		System.out.println("Low sale books:");
+		for(Product i:products.values()) {
+			if(i.quantity>5) {
+				System.out.println("ID:"+i.id+" | "+i.name+" | Rs."+i.price+" | "+i.quantity);
+			}
+		}
 	}
 	
 	public static void customerMenu(User user) {
